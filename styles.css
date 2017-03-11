@@ -21,8 +21,26 @@ body {
 #right {
   font-family: 'Anton', sans-serif;
   color: black;
-  /*background: #2afbce;*/
-  background: wheat;
+  background: #2afbce;
   flex-grow: 1;
-  padding: 15%;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+
+@media (max-width: 730px) {
+  #container {
+    flex-direction: column;
+  }
+
+  #left {
+    min-width: 0;
+  }
+
+  main {
+    margin-top: 0;
+  }
 }
