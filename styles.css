@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  min-width: 500px;
+  height: 100vh;
+  background-image: url('./public/wyatt.jpg');
+  background-size: cover;
+  background-color: hsl(0, 0%, 10%);
+  background-blend-mode: luminosity;
+}
+
+#right {
+  font-family: 'Anton', sans-serif;
+  color: black;
+  /*background: #2afbce;*/
+  background: wheat;
+  flex-grow: 1;
+  padding: 15%;
+}
