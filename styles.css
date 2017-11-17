@@ -7,22 +7,22 @@ body {
 #container {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 #left {
-  min-width: 500px;
-  height: 100vh;
-  background-image: url('./public/wyatt.jpg');
-  background-size: cover;
   background-color: hsl(0, 0%, 10%);
   background-blend-mode: luminosity;
+  background-image: url('./public/wyatt.jpg');
+  background-size: cover;
+  min-width: 500px;
 }
 
 #right {
-  font-family: 'Anton', sans-serif;
-  color: black;
   background: #2afbce;
+  color: black;
   flex-grow: 1;
+  font-family: 'Anton', sans-serif;
 }
 
 main {
@@ -31,12 +31,22 @@ main {
   margin-top: 30%;
 }
 
-@media (max-width: 730px) {
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
   #container {
     flex-direction: column;
   }
 
   #left {
+    height: 50vh;
     min-width: 0;
   }
 
