@@ -30,6 +30,9 @@ main {
   margin: 0 auto;
   margin-top: 30%;
 }
+a {
+  color: black;
+}
 
 ul {
   list-style-type: none;
