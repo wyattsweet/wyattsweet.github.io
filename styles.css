@@ -1,16 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 
 body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
   margin: 0;
 }
 
-#container {
+#root {
   display: flex;
   flex-direction: row;
   height: 100vh;
 }
 
-#left {
+
+.contentBlock {
+  background: #2afbce;
+  color: black;
+  flex-grow: 1;
+}
+
+.hpMainContent {
+  max-width: 500px;
+  margin: 30% auto 0;
+}
+
+.mainImage {
   background-color: hsl(0, 0%, 10%);
   background-blend-mode: luminosity;
   background-image: url('./public/wyatt.jpg');
@@ -18,18 +33,6 @@ body {
   min-width: 500px;
 }
 
-#right {
-  background: #2afbce;
-  color: black;
-  flex-grow: 1;
-  font-family: 'Anton', sans-serif;
-}
-
-main {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 30%;
-}
 a {
   color: black;
 }
@@ -43,12 +46,22 @@ li {
   display: inline-block;
 }
 
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+}
+
 @media (max-width: 800px) {
   #container {
     flex-direction: column;
   }
 
-  #left {
+  .mainImage {
     height: 50vh;
     min-width: 0;
   }
